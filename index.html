@@ -39,21 +39,27 @@
     <header class="container mx-auto">
       <!-- Navbar -->
       <nav class="text-white">
-        <div class="navbar bg-red-400 rounded-full">
+        <div class="flex justify-between items-center p-2 bg-red-500 rounded-full">
+          <!-- nav items -->
+          <div class="flex text-white items-center gap-5 font-bold">
+            <p>Home</p>
+            <p>About Us</p>
+            <p>Shop</p>
+            <p>All fruits</p>
+          </div>
           <!-- logo lg -->
-          <div class="flex-1 cursor-pointer hidden lg:flex">
+          <div class="flex items-center hidden lg:flex">
             <img src="./images/logo.png" alt="logo" />
-            <a class="ml-2 font-bold text-xl">daisyUI</a>
+            <a class="ml-2 font-bold text-xl">Fruit Burst</a>
           </div>
           <!-- search -->
-          <div class="flex-none gap-2 text-black">
-            <div class="form-control">
-              <input
+          <div class="flex-none gap-2 text-black relative">
+            <input
                 type="text"
                 placeholder="Search"
-                class="input input-bordered w-24 md:w-auto"
+                class="input input-bordered w-24 md:w-auto rounded-full"
               />
-            </div>
+              <i class="fa-solid fa-magnifying-glass absolute top-4 right-5"></i>
           </div>
         </div>
       </nav>
